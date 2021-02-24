@@ -1,0 +1,21 @@
+extends base
+
+block content
+
+    block styles
+        link(rel='stylesheet' type='text/css' href='../stylesheets/dlog.css')
+        link(rel='stylesheet' type='text/css' href='../stylesheets/style.css')
+
+    .container
+        header.individual-post
+        .main
+            .main-container
+                .dlog-navigation
+                    a(href='/dlog') Back
+                .post-container
+                    #individual-post-title Title
+                    #individual-post-author Author
+                    #individual-post-date Today
+                    #individual-post-content
+                        | Content Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officiis neque dicta aperiam debitis provident ut? Rerum cum nihil magnam, ab aliquid aliquam! Placeat beatae culpa laboriosam. Earum ratione consectetur molestias harum incidunt nulla, ducimus exercitationem inventore doloribus reiciendis nemo repudiandae vero magnam, sequi animi. Nam dolorum voluptatibus mollitia delectus.
+    script(src='../javascripts/individual-post.js')

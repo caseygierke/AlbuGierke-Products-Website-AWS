@@ -1,0 +1,41 @@
+
+.weather-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#city-input, #weather-output, #city-name {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.weather-search {
+    width: 100px;
+    margin: auto;
+}
+
+#weather-output-list {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin: auto;
+}
+
+.weather-output {
+    z-index: 5;
+}
+
+.card-header, .card-body {
+    z-index: 6;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin: auto;
+    text-align: center!important;
+}
+
+#city-name {
+    margin: auto;
+}

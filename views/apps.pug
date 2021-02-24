@@ -1,0 +1,76 @@
+extends base
+
+block content
+
+    block styles
+        link(rel='stylesheet' type='text/css' href='stylesheets/apps.css')
+        link(rel='stylesheet' type='text/css' href='stylesheets/style.css')
+
+    header.home-page
+        .profile-name AlbuGierke Products
+        .profile-image-casivio
+        .profile-name Web App Portfolio
+        
+    .main
+        .main-container
+            
+            a.app-link(href='/apps/beatbox')
+                .app
+                    .app-image#beatbox
+                    .app-content
+                        .app-name
+                            h4 Beatbox
+                        .app-description
+                            | Use this to make some cool beats and rhythms with just your keyboard
+
+            a.app-link(href='/apps/weather')
+                .app
+                    .app-image#weather-app
+                    .app-content
+                        .app-name
+                            h4 Weather App
+                        .app-description
+                            | Check the weather all over the world
+            
+            a.app-link(href='/apps/text-editor')
+                .app
+                    .app-image#text-editor
+                    .app-content
+                        .app-name
+                            h4 Text Editor
+                        .app-description
+                            | Manipulate font styles
+
+            a.app-link(href='http://www.albugierke-environmental.com/COVIDtracker/world/' target='_blank')
+                .app
+                    .app-image#covid-tracker
+                    .app-content
+                        .app-name
+                            h4 COVID Tracker
+                        .app-description
+                            | See up-to-date Covid data plots
+    
+            a.app-link(href='http://www.albugierke-environmental.com/EMDRbar/' target='_blank')
+                .app
+                    .app-image#emdr-bar
+                    .app-content
+                        .app-name
+                            h4 EMDR Bar
+                        .app-description
+                            | A mental health tool used for victims of trauma 
+    
+    script.
+        // Control active tab highlighting
+        // Get list of elements
+        linkList = document.querySelectorAll('.navigation li');
+        // Get endpoint from id of first div
+        page = window.location.pathname.substring(1);
+        // Loop through links to determine active
+        linkList.forEach(function (link) {
+        // Check if link equals current page
+        if (link.id == page) {
+        link.className = 'active';
+        } else {
+        link.className = '';
+        }
+        })

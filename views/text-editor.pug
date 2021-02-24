@@ -1,0 +1,40 @@
+extends base
+
+block content
+
+    block styles
+        link(rel='stylesheet' type='text/css' href='../stylesheets/text-editor.css')
+        link(rel='stylesheet' type='text/css' href='../stylesheets/style.css')
+        link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+    
+    script(src='https://kit.fontawesome.com/c939d0e917.js' crossorigin='anonymous')
+
+    br
+    br
+
+
+    main
+        h1.banner.p-3.text-primary TextEditor
+        .text-editor-container
+            .row
+                .col
+                    button#bold.btn.btn-light(type='button' onclick='makeBold(this)') Bold
+                    button#italic.btn.btn-light(type='button' onclick='makeItalic(this)') Italic
+                    button#underline.btn.btn-light(type='button' onclick='makeUnderline(this)') Underline
+                    button#left-align.align.btn.btn-light(type='button' onclick="alignText(this, 'left')")
+                        i.fas.fa-align-left
+                    button#center-align.align.btn.btn-light(type='button' onclick="alignText(this, 'center')")
+                        i.fas.fa-align-center
+                    button#right-align.align.btn.btn-light(type='button' onclick="alignText(this, 'right')")
+                        i.fas.fa-align-right
+            hr
+            .row.editor
+                .col
+                    .form-group
+                        label(for='text-input') Your Document Text
+                        textarea#text-input.form-control(oninput='updateText()' rows='3')
+                .col
+                    label(for='text-input') Formatted Text
+                    #text-output.bg-light
+
+    script(src='../javascripts/text-editor.js')

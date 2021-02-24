@@ -1,0 +1,154 @@
+
+.app-link {
+    text-decoration: none;
+}
+
+header {
+    min-height: 350px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    position: relative;
+    margin-top: 4em;
+    background-image: url(../images/assets/joshua_earle.jpg);
+    background-position: 10% 40%;
+}
+
+header > * {
+    z-index: 10;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 5;
+}
+
+.profile-image-casivio {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url(../images/assets/Me.jpg);
+}
+
+.profile-name, .title {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.subtext {
+    margin-top: 8px;
+}
+
+.main {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    max-width: 750px;
+    min-width: 600px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.app {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 150px;
+    width: 200px;
+    overflow: hidden;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    margin-top: 24px;
+    margin: 20px;
+}
+
+.app:hover {
+    transform: translate3d(0, -5px, 0);
+    box-shadow: 0 2rem 5rem 0 rgba(0,0,0,0.1);
+}
+
+.app-image {
+    flex-basis: 40%;
+    background-image: url(https://images.unsplash.com/photo-1491571786955-fad5b6755f61?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+#beatbox {
+    background-image: url(../images/assets/beatbox-background.jpeg);
+}
+
+#weather-app {
+    background-image: url(https://images.unsplash.com/photo-1491571786955-fad5b6755f61?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+}
+
+#text-editor {
+    background-image: url(../images/assets/text-editor.png);
+}
+
+#covid-tracker {
+    background-image: url(../images/assets/covid-tracker.png);
+}
+
+#emdr-bar {
+    background-image: url(../images/assets/emdr-bar.png);
+}
+
+#maps {
+    background-image: url(../images/assets/maps.png);
+}
+
+.app-content {
+    flex-basis: 60%;
+    padding: 24px;
+}
+
+.app-name {
+    margin-top: 16px;
+    font-size: 1.5em;
+    color: #333;
+    font-weight: 600;
+}
+
+.app-name h4 {
+    margin: 0;
+}
+
+.app-description {
+    margin-top: 4px;
+    color: #495057;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.4;
+    max-height: 65px;
+    overflow: hidden;
+}
+
+a.app-link {
+    text-decoration: none;    
+}
+
+.navigation {
+    z-index: 25;
+}
+
+

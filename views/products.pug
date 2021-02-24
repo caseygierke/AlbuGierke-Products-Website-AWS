@@ -1,0 +1,113 @@
+extends base
+
+block content
+  
+  // Page specific menu
+  div
+    ul.product-bar
+      li
+        a(href='#wallets') Wallets
+      li
+        a(href='#yarn') Yarn
+      li
+        a(href='#miscellaneous') Miscellaneous
+  .bannor
+    h1
+      br
+      br
+      | AlbuGierke Products
+      br
+      br
+    p
+      | We do not have a lot of products, just a few. 
+      br
+      | We are not merchants. 
+      br
+      | We just have found a few things that we really enjoy and want to share them with you. 
+      br
+      | They have brought us great joy and we hope we can pass that on to you!
+  .our-products
+    #wallets.product-container
+      br
+      br
+      h1 Credit Card Wallets
+      p
+        | These wooden credit card wallets are terrific. I&apos;ve had a few different credit card wallets and I like these for their
+        | simplicity, their durability, their look and the comments and compliments they
+        | illicit. Other wallets aren&apos;t durable and they&apos;ll easily break from normal usage.
+        | This wallet can take a beating and still look good and hold your precious plastic.
+      img(src='images/Products/Wallets/Wallet1.jpg' height='150')
+      img(src='images/Products/Wallets/Wallet2.jpg' height='150')
+      img(src='images/Products/Wallets/Wallet3.jpg' height='150')
+      img(src='images/Products/Wallets/Wallet4.jpg' height='150')
+      img(src='images/Products/Wallets/Wallet5.jpg' height='150')
+      p
+        | Additionally, they offer an alternative to the traditional
+        | back-pocket wallet that lead me to pretty major alignment issues and
+        | crippling back pain. Take care of your spine, support small business
+        | and look cool all with one simple and easy purchase.
+      .button-container
+        div
+          h2 $19.99
+        div
+          form(action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top')
+            input(type='hidden' name='cmd' value='_s-xclick')
+            input(type='hidden' name='encrypted' value='-----BEGIN PKCS7-----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-----END PKCS7-----')
+            input(type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!')
+            img(alt='' border='0' src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif' width='1' height='1')
+    #yarn.product-container
+      br
+      br
+      h1 Chunky Merino Wool
+      p
+        | This wool is ... *
+      img(src='images/Products/Yarn/yarn-blue1.jpg' height='150')
+      img(src='images/Products/Yarn/yarn-blue2.jpg' height='150')
+      img(src='images/Products/Yarn/yarn-purple1.jpg' height='150')
+      img(src='images/Products/Yarn/yarn-purple2.jpg' height='150')
+      img(src='images/Products/Yarn/yarn-cream1.jpg' height='150')
+      img(src='images/Products/Yarn/yarn-cream2.jpg' height='150')
+      img(src='images/Products/Yarn/yarn-pink1.jpg' height='150')
+      img(src='images/Products/Yarn/yarn-pink2.jpg' height='150')
+      img(src='images/Products/Yarn/yarn-grey1.jpg' height='150')
+      img(src='images/Products/Yarn/yarn-grey2.jpg' height='150')
+      img(src='images/Products/Yarn/yarn1.jpg' height='150')
+      img(src='images/Products/Yarn/yarn2.jpg' height='150')
+      img(src='images/Products/Yarn/yarn3.jpg' height='150')
+      p
+        | Additionally, support small business
+        | and look cool all with one simple and easy purchase.
+      .button-container
+        div
+          h2 $49.99 per kilo
+        div
+          form(target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post')
+            input(type='hidden' name='cmd' value='_s-xclick')
+            table
+              tr
+                td
+                  input(type='hidden' name='on0' value='Choose a Color')
+                  | Choose a Color
+              tr
+                td
+                  select(name='os0')
+                    option(value='Cream') Cream $49.99 USD
+                    option(value='Light Grey') Light Grey $49.99 USD
+                    option(value='Light Blue') Light Blue $49.99 USD
+                    option(value='Purple') Purple $49.99 USD
+                    option(value='Pink') Pink $49.99 USD
+            input(type='hidden' name='encrypted' value='-----BEGIN PKCS7-----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-----END PKCS7-----')
+            input(type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!')
+            img(alt='' border='0' src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif' width='1' height='1')
+    #miscellaneous.product-container
+      br
+      br
+      h1 Miscellaneous
+      p
+        | We don&apos;t have any miscellaneous items now but we get some pretty
+        | interesting stuff so check back and see what sort of treasures we
+        | are passing on.
+      img(src='images/assets/upward.JPG' height='550')
+      p
+        | Additionally, support small business
+        | and look cool all with one simple and easy purchase.

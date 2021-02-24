@@ -1,0 +1,47 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title AlbuGierke Products #{title}
+  block styles
+    link(rel='stylesheet' type='text/css' href='stylesheets/style.css')
+  
+.navigation
+  ul.navigation
+    li.active
+      a(href='/') Home
+    li#products
+      a(href='/products') Products
+    li#dlog
+      a(href='/dlog') Dlog
+    li#capoeira
+      a(href='/capoeira') Capoeira Vlog
+    li#apps
+      a(href='/apps') Apps
+.bannor
+block content
+ 
+p
+  | Made with love by AlbuGierke Environmental Solutions
+
+script.
+  // Control active tab highlighting
+  // Get list of elements
+  linkList = document.querySelectorAll('.navigation li');
+  // Get endpoint from id of first div
+  page = window.location.pathname.substring(1);
+  // Loop through links to determine active
+  linkList.forEach(function (link) {
+  //- Check if id equals dlog or apps
+  if (page.substring(0,4).includes('apps')) {
+  page = page.substring(0,4);
+  } 
+  if (page.substring(0,4).includes('dlog')) {
+  page = page.substring(0,4);
+  }
+  // Check if link equals current page
+  if (link.id == page) {
+  link.className = 'active';
+  } else {
+  link.className = '';
+  }
+  })

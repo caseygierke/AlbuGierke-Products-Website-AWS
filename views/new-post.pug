@@ -1,0 +1,29 @@
+extends base
+
+block content
+
+    block styles
+        link(rel='stylesheet' type='text/css' href='../stylesheets/dlog.css')
+        link(rel='stylesheet' type='text/css' href='../stylesheets/style.css')
+
+    .container.new-post-page
+        header
+            .title New Post
+            .subtext
+            | Let&apos;s add a new blog post!
+        .main
+            .main-container
+                .dlog-navigation
+                    a(href='/dlog') Back
+                .form-container
+                    form
+                    input#form-post-author(type='text' name='post-author' placeholder='Author')
+                    input#form-post-title(type='text' name='post-title' placeholder='Post Title')
+                    textarea#form-post-content(name='post-content' placeholder='Post Content')
+                    div
+                        label Choose Image
+                        input#form-post-image(type='file' name='post-image' accept='image/*')
+                    button#form-post-submit(type='button' onclick='submitNewPost()') Submit
+        footer
+            p Made with &#x2764;&#xFE0F; by Casivio of AlbuGierke Environmental Solutions
+    script(src='../javascripts/new-post.js')

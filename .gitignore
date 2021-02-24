@@ -1,0 +1,22 @@
+.env
+store-data.json
+watersheds.geojson
+wbdhu12_a_nm.geojson
+bin/
+models/store.js
+models/watersheds.js
+node_modules/
+public/images/dog-vids/
+public/images/dog-pics/
+public/images/assets/Images.pptx
+public/javascripts/watersheds.js
+public/stylesheets/maps.css
+routes/map-route.js
+routes/users.js
+views/layout.pug
+views/watersheds.pug
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
