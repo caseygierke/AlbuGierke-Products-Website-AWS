@@ -12,7 +12,7 @@ public/images/assets/Images.pptx
 public/javascripts/watersheds.js
 public/stylesheets/maps.css
 routes/map-route.js
-routes/users.js
+#routes/users.js
 views/layout.pug
 views/watersheds.pug
 
@@ -21,3 +21,4 @@ views/watersheds.pug
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 AlbuGierkeProductsKey.pem
+AlbuGierkeProductsKey2.pem
