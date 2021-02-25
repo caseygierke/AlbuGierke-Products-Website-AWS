@@ -2,7 +2,7 @@
 store-data.json
 watersheds.geojson
 wbdhu12_a_nm.geojson
-bin/
+# bin/
 models/store.js
 models/watersheds.js
 node_modules/
@@ -20,3 +20,4 @@ views/watersheds.pug
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+AlbuGierkeProductsKey.pem
