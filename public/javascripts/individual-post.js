@@ -1,6 +1,8 @@
 
-const API_URL = "http://localhost:3000/dlog/api/posts/";
-const API_BASE_URL = "http://localhost:3000/";
+// const API_URL = "http://localhost:3000/dlog/api/posts/";
+// const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = "http://ec2-34-214-201-195.us-west-2.compute.amazonaws.com:3000"
+const API_URL = `${API_BASE_URL}/dlog/api/posts`;
 
 // Define initial actions
 window.onload = () => {
@@ -21,7 +23,7 @@ const getPost = () => {
     // Call getPostIdParam function
     const postId = getPostIdParam();
     // Build url from postId
-    const url = `${API_URL}${postId}`;
+    const url = `${API_URL}/${postId}`;
     // Send GET request to API
     fetch(url, {
         method: "GET"
