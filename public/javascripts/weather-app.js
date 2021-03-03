@@ -1,11 +1,13 @@
 
+const API_BASE_URL = "http://ec2-34-212-188-42.us-west-2.compute.amazonaws.com:3000"
+
 // Define getWeatherData function
 getWeatherData = () => {
     
     // Get city from user
     const city = String(document.getElementById('city-input').value);
     // Build url for api call
-    url = `/dlog/api/weather/${city}`
+    url = `${API_BASE_URL}/dlog/api/weather/${city}`
     // Fetch data
     fetch(url, {
         method: "GET"
