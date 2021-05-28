@@ -7,12 +7,14 @@
     "devstart": "nodemon ./bin/www",
     "serverstart": "DEBUG=express-locallibrary-tutorial:* npm run devstart",
     "prodstart": "nodemon ./bin/www",
-    "production": "export NODE_ENV=production: npm run prodstart"
+    "production": "export NODE_ENV=production && npm run prodstart",
+    "start2": "cross-env NODE_ENV=production && npm run prodstart"
   },
   "dependencies": {
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "cookie-parser": "~1.4.4",
+    "cross-env": "^7.0.3",
     "debug": "~2.6.9",
     "dotenv": "^8.2.0",
     "express": "~4.16.1",
